@@ -1,0 +1,25 @@
+{
+  "name": "demoProject",
+  "homepage": "https://github.com/jinsihou19/demoProject",
+  "authors": [
+    "jinsihou <540097546@qq.com>"
+  ],
+  "description": "demo for build webapp",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "demo"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
