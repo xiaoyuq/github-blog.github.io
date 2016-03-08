@@ -2,3 +2,5 @@
 assets/lib/
 !assets/lib/bootstrap/dist/
 !assets/lib/jquery/dist/
+node_modules/
+*.map
