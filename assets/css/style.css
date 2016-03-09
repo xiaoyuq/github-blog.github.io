@@ -68,6 +68,8 @@ article h3 {
 article div {
     width: 300px;
     margin:0 auto;
+}article div p {
+   text-indent: 30px;
 }
 article span.label {
     margin:  8px;
