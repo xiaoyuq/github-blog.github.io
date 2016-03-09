@@ -6,7 +6,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target=".nav-left">
 <div class="container">
     <div class="row">
         <div class="jumbotron">
@@ -16,14 +16,23 @@
         </div>
     </div>
     <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="nav-left">
+               <ul class="list-group nav">
+                   <li class="list-group list-group-item"><a href="#section1">基本信息</a></li>
+                   <li class="list-group list-group-item"><a href="#section2">兴趣涉猎</a></li>
+                   <li class="list-group list-group-item"><a href="#section3">个人作品</a></li>
+                   <li class="list-group list-group-item"><a href="#section4">联系信息</a></li>
+                   <li class="list-group list-group-item"><a href="#section5">个人简介</a></li>
+               </ul>
+            </div>
+            <div class="col-md-7 col-xs-offset-4 text-center content-border">
                 <h1 class="name">我的信息</h1>
                 <figure class="introduce">
                     <img src="assets/img/psb.jpg" alt="这是一张自己的照片">
                     <figcaption>这是我的丑照</figcaption>
                 </figure>
                 <article>
-                    <h3>基本信息</h3>
+                    <h3 id="section1">基本信息</h3>
                     <div class="text-left">
                         <p>姓名：万孝东</p>
                         <p>地址：重庆</p>
@@ -33,7 +42,7 @@
 
                 </article>
                 <article>
-                    <h3>兴趣涉猎</h3>
+                    <h3 id="section2">兴趣涉猎</h3>
                     <div>
                         <span class="label label-default btn">vbs</span>
                         <span class="label label-default btn">python</span>
@@ -49,14 +58,14 @@
                     </div>
                 </article>
                 <article>
-                    <h3>个人作品</h3>
+                    <h3 id="section3">个人作品</h3>
                     <div>
-                        <a class="btn btn-default" href="#"><span class="glyphicon glyphicon-tag">Github</span></a>
-                        <a class="btn btn-default" href="#"><span class="glyphicon glyphicon-tag">Blog</span></a>
+                        <a class="btn btn-default" href="https://github.com/MicroUncle/"><span class="glyphicon glyphicon-tag">Github</span></a>
+                        <a class="btn btn-default" href="http://www.systembbs.com"><span class="glyphicon glyphicon-tag">Blog</span></a>
                     </div>
                 </article>
                 <article>
-                    <h3>联系我</h3>
+                    <h3 id="section4">联系我</h3>
                     <div>
                         <span class="glyphicon glyphicon-chevron-right btn btn-default">QQ</span>
                         <span class="glyphicon glyphicon-chevron-right btn btn-primary">Email</span>
@@ -78,5 +87,6 @@
 </footer>
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/demo.js"></script>
 </body>
 </html>

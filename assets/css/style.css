@@ -25,6 +25,21 @@ a:link,a:visited,a:hover{
     border-top: 1px solid #e5e5e5
 }
 /*wxd添加代码*/
+.nav-left{
+    position: fixed;
+    top: 393px;
+    width:20%;
+    left: 13%;
+
+}
+.list-group li{
+    border: 1px solid #d0e7f3;
+    border-radius: 5px;
+}
+.content-border {
+    border: 1px solid #d0e7f3;
+    border-radius: 5px;
+}
 .name {
     font-weight: bold;
     margin-bottom: 40px;
@@ -48,7 +63,7 @@ figure , article {
 }
 article h3 {
     font-weight:bold;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 article div {
     width: 300px;
@@ -57,7 +72,11 @@ article div {
 article span.label {
     margin:  8px;
     display: inline-block;
+
 }
+
+
+
 
 /*wxd添加代码*/
 
