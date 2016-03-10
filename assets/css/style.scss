@@ -1,3 +1,4 @@
+@import 'tools';
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');
@@ -6,16 +7,81 @@
 
 a:link, a:visited, a:hover {
   text-decoration: none;
-  color: #222222;
+  color: #222222
+}
+
+.my-little-shake {
+  @include do-shake(
+          $name: 'my-little-shake',
+          $h: 5px,
+          $v: 5px,
+          $r: 5deg,
+          $dur: 0.5s,
+          $precision: .2,
+          $opacity: false,
+          $q: 1,
+          $t: ease-in-out,
+          $delay: null,
+          $chunk: 100%);
+}
+
+.my-heavy-shake {
+  @include do-shake(
+          $name: 'my-heavy-shake',
+          $h: 20px,
+          $v: 20px,
+          $r: 5deg,
+          $dur: 0.5s,
+          $precision: .1,
+          $opacity: false,
+          $q: 1,
+          $t: ease-in-out,
+          $delay: null,
+          $chunk: 100%);
 }
 
 .jumbotron {
   margin-top: 40px;
-  background-color: #d1e8f4
+  background-color: #d1e8f4;
+  z-index: 2;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1)
 }
 
 .thumbnail {
-  background-color: #d1e8f4
+  background-color: #d1e8f4;
+  z-index: 2;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail:hover{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail img {
+  transition: All 2s ease-in-out;
+  -webkit-transition: All 2s ease-in-out;
+  -moz-transition: All 2s ease-in-out;
+  -o-transition: All 2s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+.img-box{
+  overflow: hidden;
 }
 
 .bs-footer {
@@ -77,6 +143,10 @@ article h3 {
 article div {
   width: 300px;
   margin: 0 auto;
+}
+
+article div p {
+  text-indent: 30px;
 }
 
 article span.label {
