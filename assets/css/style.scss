@@ -10,6 +10,19 @@ a:link, a:visited, a:hover {
   color: #222222
 }
 
+/*
+$name       {String} is the name for the keyframes animation
+$h          {Number} is the max number for random to assign in x axis
+$v          {Number} is the max number for random to assign in y axis
+$r          {Number} is the max number for random rotation
+$dur        {Number} is the animation-duration time value
+$precision  {Number} is the precision of the keyframes animation. For example .02 generates keyframes each 2% and .1 each 10%. The calculation is $step: 100 * $precision;
+$opacity    {Boolean} to apply random animation also in the opacity property
+$q          {String} is the animation-iteration-count value
+$t          {String} animation-timing-function value
+$delay      {Number} animation-delay time value
+$chunk      {Number} is the part of the keyframes where apply the animation
+*/
 .my-little-shake {
   @include do-shake(
           $name: 'my-little-shake',
